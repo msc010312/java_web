@@ -92,7 +92,8 @@
     transform: translate(-50%, -50%);
 }
 
-input[type=button] {
+input[type=button],
+input[type=submit] {
     position: relative;
     display: block;
     height: 40px;
@@ -107,4 +108,13 @@ input[type=button] {
     margin: 15px 0;
     margin-right: 20px;
     border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+input[type=button]:hover,
+input[type=submit]:hover {
+    border-color: none;
+    background: #333;
+    color: #fff;
+    box-shadow: 5px 5px 10px grey;
 }
